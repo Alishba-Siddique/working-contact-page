@@ -29,7 +29,7 @@ const ContactPage = () => {
     const handleSubmit = async (event) => {
       event.preventDefault();
       try {
-        const response = await fetch('http://localhost:3000/server/send-email.php', {
+        const response = await fetch('https://working-contact-page-8f532e5ff4f7.herokuapp.com/', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
