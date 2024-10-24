@@ -4,7 +4,7 @@ error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
 // CORS headers
-header("Access-Control-Allow-Origin: http://localhost:5174");
+header("Access-Control-Allow-Origin: https://working-contact-page.netlify.app/");
 header("Access-Control-Allow-Methods: POST, GET, OPTIONS");
 header("Access-Control-Allow-Headers: Content-Type");
 
@@ -88,7 +88,7 @@ try {
     $mail->Port = $_ENV['SMTP_PORT'];
 
     // Recipients
-    $mail->setFrom($_ENV['SMTP_USER'], 'East Coast Growers');
+    $mail->setFrom($_ENV['SMTP_USER'], 'Alishba Siddique');
     $mail->addAddress($_ENV['SMTP_USER']); // Send to your company email
     $mail->addReplyTo($email, $name); // Set reply-to as the sender's email
 
